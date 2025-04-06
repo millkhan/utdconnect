@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+        <meta charset="UTF-8">
+        <title>utdconnect</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+        <link href="/static/css/login.css" rel="stylesheet" crossorigin>
+    </head>
+    <body>
+        <div id="outer-box">
+            <h1>utdconnect</h1>
+
+            <div>
+                <div id="login-box" class="inner-box">
+                    <p>Enter your utd email and start connecting!</p>
+                    <div class="inner-box-two">
+                        <input type="email" inputmode="email" id="email-form" placeholder="firstname.lastname@utdallas.edu"/>
+                        <button id="request-button">Login</button>
+                    </div>
+                </div>
+
+                <div id="code-box" class="inner-box">
+                    <div class="inner-box-two">
+                        <div class="inner-box-two info-grid">
+                            <p><strong>Name:</strong> <span id="display-name">Milad Noorzaie</span></p>
+                            <p><strong>Email:</strong> <span id="display-email">milad@example.com</span></p>
+                            <p><strong>Major:</strong> <span id="display-major">Computer Science</span></p>
+                            <p><strong>Year:</strong> <span id="display-year">Senior</span></p>
+                        </div>
+                    </div>
+
+                    <p id="test">Found you!</p>
+
+                    <div class="inner-box-two entered-email-box">
+                        <p id="entered-email-value">firstname.lastname@utdallas.edu</p>
+                        <button id="edit-email-button" class="image-button">
+                            <img class="icon" src="/static/img/edit-solid.svg"></img>
+                        </button>
+                    </div>
+
+                    <div class="inner-box-two entered-email-box">
+                        <p>Click here to continue</p>
+                        <button id="continue-button" class="image-button">
+                            <img class="icon" src="/static/img/continue-solid.svg"></img>
+                        </button>
+                    </div>
+                </div>
+
+                <div id="intro-box">
+                    <h1>This part's important!</h1>
+                    <p>Tell us about yourself!</p>
+                    <textarea id="about-form" rows="10" cols="25"></textarea>
+                    <p>We'll take care of the rest ;)</p>
+
+                    <button id="connect-button">CONNECT</button>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="/static/js/login.js"></script>
+</html>

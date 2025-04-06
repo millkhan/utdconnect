@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+        <meta charset="UTF-8">
+        <link href="/static/css/chat.css" rel="stylesheet" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+        <title>Chat</title>
+    </head>
+    <body>
+        <div id="full-container">
+
+            <div id="top-container">
+                <h2 id="title">utdconnect</h2>
+                <div id="top-right-container">
+                    <button id="end-chat-button">End Chat</button>
+                </div>
+            </div>
+
+            <div id="content-container">
+                <div id="video-container">
+                    <p id="display-fullname">You were matched with: ...</p>
+
+                    <p id="display-funfacts">Fun facts about ...</p>
+                    <div class="inner-box-two info-grid">
+                        <p><strong>Email:</strong> <span id="display-email">...</span></p>
+                        <p><strong>Major:</strong> <span id="display-major">...</span></p>
+                        <p><strong>Year:</strong> <span id="display-year">...</span></p>
+                    </div>
+
+                    <p id="display-why"><strong>Why ...?</strong></p>
+                    <p id="display-explanation">...</p>
+
+                    <p>Don't wait! Start chatting. Here's a potential icebreaker to start the conversation based off your mutual interests!</p>
+                    <p id="display-icebreaker"><strong>...</strong></p>
+                </div>
+
+                <div id="ui-container">
+                    <div id="chat-container">
+                        <textarea readonly id="chat"></textarea>
+                        <div id="input-area">
+                            <input id="chat-input" placeholder="Type your message here.">
+                            <button id="send-button" class ="chat-button" type="button">Send [Enter]</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </body>
+    <script src="/static/js/chat.js"></script>
+</html>

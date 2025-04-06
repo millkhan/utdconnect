@@ -1,0 +1,96 @@
+html {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-grow: 1;
+    height: 100%;
+    font-family: "Roboto Mono", monospace;
+}
+
+p {
+    font-weight: normal;
+    font-size: 16px;
+}
+
+button {
+    font-family: "Roboto Mono", monospace;
+}
+
+input {
+    font-family: "Roboto Mono", monospace;
+}
+
+#outer-box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    flex-grow: 1;
+}
+
+.inner-box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.inner-box-two {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+#code-box {
+    display: none;
+}
+
+#test {
+    margin-bottom: 4px;
+}
+
+#entered-email-value {
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+#email-form {
+    width: 250px;
+}
+
+.entered-email-box {
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
+    margin-bottom: 8px;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+}
+
+.image-button {
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px 24px;
+}
+
+.image-button:hover {
+    background-image: linear-gradient(rgb(0 0 0/10%) 0 0);
+}
+
+#intro-box {
+    display: none;
+    flex-direction: column;
+}

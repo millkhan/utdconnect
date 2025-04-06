@@ -1,0 +1,121 @@
+html, body {
+    /* height: calc(100% - 16px); */
+    height: calc(100% - 8px);
+    font-family: "Roboto Mono", monospace;
+}
+
+#full-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 5px;
+}
+
+#top-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon {
+    width: 15px;
+    height: 15px;
+}
+
+#top-right-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+#title, #username, #logout-button {
+    margin: 0px;
+}
+
+#logout-button {
+    height: fit-content;
+    width: fit-content;
+}
+
+#content-container {
+    display: flex;
+    flex-direction: row;
+    max-height: 100%;
+    flex-grow: 1;
+    gap: 10px;
+}
+
+/* Videos */
+
+#video-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 40%;
+    height: 100%;
+}
+
+.video-input {
+    object-fit: contain;
+    flex-grow: 1;
+}
+
+#remoteVideo {
+    background-color: black;
+}
+
+/* Chat */
+
+#ui-container {
+    display: flex;
+    flex-direction: column;
+    min-width: 50%;
+    /* min-width: 600px; */
+    flex-grow: 1;
+}
+
+#chat-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 5px;
+}
+
+#chat {
+    box-sizing: border-box;
+    resize: none;
+    flex-grow: 1;
+}
+
+#chat:focus {
+    outline: none;
+}
+
+#input-area {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+#chat-input {
+    margin: 0;
+}
+
+#send-button {
+    flex-grow: 1;
+}
+
+#chat-input {
+    flex-grow: 3;
+}
+
+.chat-button {
+    font-family: "Roboto Mono", monospace;
+    width: 40px;
+    height: 40px;
+}
+
+input, button {
+    font-family: "Roboto Mono", monospace;
+}
